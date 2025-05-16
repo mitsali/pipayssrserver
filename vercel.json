@@ -5,7 +5,8 @@
       "src": "src/server.js",
       "use": "@vercel/node",
       "config": {
-        "includeFiles": ["../dist/server/entry.mjs"]
+        "includeFiles": ["dist/**"],
+        "runtime": "nodejs20.x"  // Explicit Node.js version
       }
     }
   ],
