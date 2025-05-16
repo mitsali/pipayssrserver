@@ -5,7 +5,7 @@
     "start": "node src/server.js"
   },
   "engines": {
-    "node": ">=20.0.0"  // Must match Vercel's runtime
+    "node": ">=20.0.0" 
   },
   "dependencies": {
     "@formspree/react": "^2.5.2",
