@@ -2,21 +2,21 @@
   "version": 3,
   "builds": [
     {
-      "src": "dist/server/entries/index.mjs",
+      "src": "src/server.js",  // Your custom server entry
       "use": "@vercel/node",
-      "config": { 
-        "includeFiles": ["dist/**"]
+      "config": {
+        "includeFiles": ["dist/**", "public/**"]  // Include built assets
       }
     }
   ],
   "routes": [
     {
-      "src": "/_next/static/(.*)",
-      "headers": { "Cache-Control": "public, max-age=31536000, immutable" }
+      "src": "/static/(.*)",
+      "dest": "/dist/client/$1"  // Serve static files
     },
     {
-      "src": "/(.*)", 
-      "dest": "dist/server/entries/index.mjs"
+      "src": "/(.*)",
+      "dest": "src/server.js"    // All routes → custom server
     }
   ]
 }
