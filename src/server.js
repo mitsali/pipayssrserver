@@ -10,7 +10,7 @@ const __dirname = path.dirname(__filename);
 
 // Load production entry (critical for Vike SSR)
 if (process.env.NODE_ENV === 'production') {
-  await import('../dist/server/entries/index.mjs');
+  await import('../dist/server/entry.mjs');
 }
 
 const app = express();
