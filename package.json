@@ -1,8 +1,8 @@
 {
   "scripts": {
-    "build": "vike build",
-    "dev": "vike dev",
-    "preview": "vike preview"
+  "dev": "vike dev",          
+    "build": "vite build",     
+    "start": "node src/server.js"  
   },
   "dependencies": {
     "@formspree/react": "^2.5.2",
