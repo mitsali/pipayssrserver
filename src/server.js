@@ -7,7 +7,11 @@ import path from 'node:path';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const isProduction = process.env.NODE_ENV === 'production';
+
+// Load production entry (critical for Vike SSR)
+if (process.env.NODE_ENV === 'production') {
+  await import('../dist/server/entries/index.mjs');
+}
 
 const app = express();
 
@@ -18,7 +22,7 @@ app.use(compression());
 
 // Static files
 app.use(express.static(path.join(__dirname, '../dist/client'), {
-  maxAge: isProduction ? '1y' : 0
+  maxAge: process.env.NODE_ENV === 'production' ? '1y' : 0
 }));
 
 // Vike SSR handler
@@ -30,17 +34,16 @@ app.use(async (req, res) => {
     });
     
     if (!pageContext?.httpResponse) {
-      return res.status(404).send('Not Found');
+      return res.status(404).send('Not found');
     }
-
+    
     const { statusCode, headers, body } = pageContext.httpResponse;
     headers?.forEach(([name, value]) => res.setHeader(name, value));
     res.status(statusCode).send(body);
   } catch (error) {
     console.error(error);
-    res.status(500).send(isProduction ? 'Server Error' : error.stack);
+    res.status(500).send('Server error');
   }
 });
 
-// Vercel requires this export
-export default app;
+export default app; // ← Must be default export
