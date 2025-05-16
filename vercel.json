@@ -2,19 +2,19 @@
   "version": 3,
   "builds": [
     {
-      "src": "src/server.js",  // Your custom server entry
-      "use": "@vercel/node",   // Uses Node.js runtime
+      "src": "src/server.js",  
+      "use": "@vercel/node",   
       "config": {
         "includeFiles": [
-          "dist/**",     // Include built assets (if applicable)
-          "public/**"    // Static files (if applicable)
+          "dist/**",     
+          "public/**"    
         ]
       }
     }
   ],
   "routes": [
     {
-      "src": "/static/(.*)",  // Serve static files
+      "src": "/static/(.*)",  
       "dest": "/dist/client/$1"
     },
     {
