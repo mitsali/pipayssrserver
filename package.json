@@ -1,8 +1,11 @@
 {
   "scripts": {
-  "dev": "vike dev",          
-    "build": "vite build",     
-    "start": "node src/server.js"  
+    "build": "vike build && vite build --ssr",
+    "dev": "vike dev",
+    "start": "node src/server.js"
+  },
+  "engines": {
+    "node": ">=20.0.0"  // Must match Vercel's runtime
   },
   "dependencies": {
     "@formspree/react": "^2.5.2",
