@@ -1,0 +1,1 @@
+export default 'ponka About Us - MySite'

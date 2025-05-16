@@ -1,0 +1,50 @@
+.faqs-container{
+    background-color: var(--neutral-gray);
+    padding-top: 20px;
+    padding-bottom:20px;
+}
+
+.service-container .navbar{
+    font-size: 1.5rem;
+}
+
+.service-image{
+    border: 1px solid black;
+    max-width: 600px !important;
+    margin-bottom: 20px;
+    vertical-align: middle;
+} 
+
+.service-content *{
+    line-height: 2;
+    font-size: 1.5rem;
+}
+
+
+.side-nav{
+    background-color: var(--neutral-gray);
+    border-radius: 10px;
+    padding:20px !important;
+}
+
+.side-nav a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.active-nav{
+    background-color: var(--secondary-color) !important;
+    color: white !important;
+}
+
+.service-subcontainer{
+    padding: 20px !important;
+}
+
+
+@media (max-width: 800px) {
+    .service-image{
+        max-width: 400px !important;
+    }
+}

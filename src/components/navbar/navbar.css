@@ -1,0 +1,67 @@
+.main-navbar{
+    background-color: var(--primary-color) !important;
+    top: 0px;
+    z-index: 100000;
+}
+.p-megamenu-root-list > .p-menuitem > .p-menuitem-content a *{
+    color: white !important;
+    font-weight: bold;
+
+}
+
+@media screen and (max-width: 1400px) {
+    .p-megamenu-root-list > .p-menuitem > .p-menuitem-content a *{
+        color: black !important;
+    }
+    
+}
+
+.p-megamenu-button svg{
+    color: black;
+}
+
+
+.p-megamenu{
+    background-color: transparent !important;
+    border: none;
+    padding: 0px;
+}
+
+.p-megamenu-root-list{
+    padding: 0px !important;
+    margin: 0px !important;
+}
+.p-megamenu-root-list a{
+    text-decoration: none;
+}
+
+.p-megamenu-panel{
+    border-radius: 10px;
+}
+
+.p-megamenu, .p-menuitem-link, .p-menuitem, .p-menuitem-content{
+    color: black !important;
+    background-color: transparent !important;
+}
+
+
+/* .p-menuitem-link:hover, .p-menuitem-link:active, .p-menuitem-content:hover, .p-menuitem:hover, .p-menuitem-content:active, .p-menuitem:active{
+    color: var(--neutral-light) !important;
+    background-color: var(--secondary-color) !important;
+    border-radius: 5px;
+} */
+
+.p-megamenu .p-menuitem.p-highlight > .p-menuitem-content {
+    color: var(--neutral-light) !important;
+    background-color: var(--secondary-color) !important;
+    border-radius: 5px;
+}
+
+.nav-phone{
+    width:150px !important;
+}
+
+.nav-phone span{
+    padding-left: 2px;
+    font-weight: bold;
+}

@@ -1,0 +1,74 @@
+.request-main{
+    background-image: url(/trucks.webp);
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@supports not (background-image: url(/trucks.webp)) {
+    .request-main {
+      background-image: url(/trucks.jpg);
+    }
+  }
+.request-subcontainer{
+    height:100%;
+    align-items:center;
+    justify-content: space-between;
+    display:flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.request-subsubcontainer{
+    flex-basis:100%;
+    align-items:center;
+    justify-content: space-between;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.first-card{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 40px !important;
+    padding: 20px;
+    min-height: 250px;
+}
+
+.other-cards{
+    border: 1px solid var(--primary-color);
+    background-color: rgba(255, 255, 255, 0.685) !important;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 40px !important;
+    display:flex;
+    flex-direction: column;
+    justify-content: start;
+    position:relative;
+    padding: 20px;
+    min-height: 250px;
+    line-height: 30px;
+    background-color: var(--neutral-light);
+}
+
+.other-cards h3{
+    color: var(--primary-color) !important;
+    font-weight: bold
+}
+
+.icon-wrapper{
+    position: absolute;
+    top:-20px;
+    left:50px;
+}
+
+@media (max-width: 1000px){
+    .request-main{
+        background-position-x: 15%;
+    }
+  }

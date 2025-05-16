@@ -1,0 +1,13 @@
+.call-button{
+    position: fixed;
+    display: inline;
+    bottom: 15px;
+    left: 15px;
+    z-index: 2000;
+}
+
+.call-button .call-cta{
+    padding: 15px;
+    border-radius: 100%;
+}
+

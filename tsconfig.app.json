@@ -1,0 +1,25 @@
+//    config.app.json
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "composite": true,
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsxImportSource": "react",
+    "paths": {
+      "@renderer/*": ["./src/renderer/*"]
+    }
+  },
+  "include": [
+    "src",
+    "src/renderer/+onRenderClient.jsx",
+    "src/renderer/+onRenderHtml.jsx"
+  ],
+  "exclude": ["node_modules"]
+}

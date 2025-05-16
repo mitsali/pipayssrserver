@@ -1,0 +1,79 @@
+.hero{
+  background-image: url("/hero-picture.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height:90vh;
+  color:black;
+}
+
+@supports not (background-image: url('/hero-picture.webp')) {
+  .hero {
+    background-image: url('/hero-picture.jpg');
+  }
+}
+
+  .hero-container,.hero-subcontainer{
+    min-height:90vh;
+  }
+  
+  .hero-subcontent{
+    background-color: rgba(255, 255, 255, 0.685) !important;
+    padding: 10px;
+
+  }
+  .hero-content, .hero-contact {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .hero-content h1, .hero-contact {
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content p {
+    margin-bottom: 2rem;
+  }
+  .hero-content a{
+    text-decoration: none;
+    color: var(--primary-color);
+  }
+  .hero-button {
+    align-self: flex-start;
+  }  
+
+  .contact-container button{
+    padding-left:50px !important;
+    padding-right:50px !important;
+  }
+  .contact-wrapper{
+    color: black;
+    background-color: var(--neutral-light) !important;
+  }
+
+  @media (max-width: 768px) {
+
+    .hero-contact{
+      justify-content: start !important;
+      align-items: center;
+    }
+
+    /* .hero-contact .contact-wrapper {
+      width:300px;
+    } */
+
+}
+@media (max-width: 1000px){
+  .hero{
+    background-size: cover;
+    background-image: url("/hero-picture-small.webp");
+    background-attachment:unset;
+  }
+  @supports not (background-image: url("/hero-picture-small.webp")) {
+    .hero {
+      background-image: url("/hero-picture-small.png");
+    }
+  }
+  
+}

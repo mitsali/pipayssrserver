@@ -1,0 +1,36 @@
+.slick-track{
+    height: 210px;
+}
+.slick-list{
+    height:100%;
+}
+.slick-slide {
+    border-radius: 10px;
+    height: 100% !important;
+    box-shadow: 5px 5px;
+}
+
+.slick-slide > div {
+    height: 100% !important;
+}
+
+.testimonial-container {
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-around;
+    text-align: center;
+    text-wrap: wrap;
+    margin-left: 10px !important;
+    height: 100% !important;
+}
+
+
+.testimonial-author {
+    font-style: italic;
+}
+
+.slick-next:before, .slick-prev:before {
+    color: var(--secondary-color);
+}

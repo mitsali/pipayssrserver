@@ -1,0 +1,1 @@
+export default 'Contact more about our company and mission.'

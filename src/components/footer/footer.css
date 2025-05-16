@@ -1,0 +1,45 @@
+.pre-footer{
+  background-color: var(--primary-color) !important;
+  min-height: 300px;
+  color: white !important;
+  font-size: 1.2rem;
+}
+
+.pre-sub-footer{
+  min-height: 300px;
+
+}
+
+.pre-subsub-footer{
+  min-height: 300px;
+}
+.pre-footer h4{
+  text-decoration: underline;
+}
+.pre-footer li{
+  list-style-type:none;
+}
+
+.pre-footer a{
+  text-decoration: none;
+  color: white !important;
+
+}
+.footer {
+  background-color: var(--primary-color) !important;
+    padding: 10px 0;
+  }
+
+  
+  .footer p {
+    margin-bottom: 0;
+  }
+
+  
+  .pre-footer .pre-subsub-footer .dropdown-item{
+    color: black !important;
+  }
+
+  .pre-footer .pre-subsub-footer .dropdown-item:hover{
+    color: var(--secondary-color) !important;
+  }

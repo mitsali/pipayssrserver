@@ -1,0 +1,1 @@
+export default 'keywords -about -our -company and mission.'

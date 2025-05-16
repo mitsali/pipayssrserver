@@ -1,0 +1,66 @@
+/* src/styles.css */
+.hydrating {
+  visibility: hidden;
+}
+.hydrating button {
+  transform: scale(1) !important;
+}
+.hydrated {
+  visibility: visible;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.btn-primary{
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-secondary{
+    background-color: var(--secondary-color) !important;
+    border-color: var(--secondary-color) !important;
+}
+
+.bg-primary{
+    background-color: var(--primary-color);
+}
+
+.btn-primary{
+    color: var(--neutral-light) !important;
+    background-color: var(--secondary-color) !important;
+    border-color: transparent;
+}
+.btn-primary *{
+    color: var(--neutral-light) !important;
+}
+.main{
+    height:100vh;
+}
+
+.btn-primary:hover {
+    color: var(--btn-hover-color) !important;
+    background-color: var(--btn-hover-bg) !important;
+    border-color: var(--btn-hover-border-color) !important;
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+
+}
+
+a:hover {
+    background-color: transparent !important;
+    color: var(--secondary-color) !important;
+}
+
+.avatar {
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image covers the entire container */
+    border: 2px solid #ccc; /* Optional: adds a border */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow */
+  }
+  

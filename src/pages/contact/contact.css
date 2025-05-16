@@ -1,0 +1,13 @@
+.contact{
+    height:100vh;
+
+}
+.contact-container{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.contact-wrapper{
+    padding:30px;
+    background-color: var(--neutral-light);
+    border-radius:30px;
+}

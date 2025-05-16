@@ -1,0 +1,39 @@
+.service-card-main{
+    background-color: var(--neutral-light);
+}
+
+.service-card-subcontainer{
+    height:100%;
+    align-items:center;
+    justify-content: space-between;
+    display:flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.service-card-subsubcontainer{
+    flex-basis:100%;
+    align-items:center;
+    justify-content: space-between;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.service-card-main .card{
+    border:none;
+    border-radius:10px
+}
+
+.service-card-main a{
+    text-decoration: none;
+    color: black;
+}
+
+.service-card-main .card:hover{
+    border-radius: 10px;
+    background-color: var(--secondary-color) !important;
+    color: white !important;
+}

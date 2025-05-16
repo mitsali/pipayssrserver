@@ -1,0 +1,23 @@
+//    config.node.json
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "composite": true,
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
+    "module": "Node16", // Changed from ESNext to match moduleResolution
+    "moduleResolution": "Node16",
+    "target": "ES2022",
+    "strictNullChecks": true,
+    "noImplicitAny": true,
+    "types": ["node", "vike/types"],
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true
+  },
+  "include": [
+    "vite.config.ts",
+    "src/renderer/+onRenderHtml.jsx",
+    "src/renderer/+onRenderClient.jsx"
+  ],
+  "exclude": ["node_modules"]
+}
